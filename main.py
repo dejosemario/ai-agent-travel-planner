@@ -17,8 +17,6 @@ from tools import TOOL_IMPLEMENTATIONS
 
 load_dotenv()
 
-# Only OPENROUTER_API_KEY / GEMINI_API_KEY / LLM_MODEL_NAME are guaranteed to
-# be supplied externally; everything else has a default.
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "openai/gpt-4o-mini")
 OPENROUTER_BASE_URL = os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
@@ -32,7 +30,6 @@ if not OPENROUTER_API_KEY:
 
 client = OpenAI(api_key=OPENROUTER_API_KEY, base_url=OPENROUTER_BASE_URL)
 
-# ---- tool schemas (OpenAI function-calling format, supported by OpenRouter) ----
 TOOLS = [
     {
         "type": "function",
