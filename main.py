@@ -2,11 +2,6 @@
 Function-calling demo: flight schedule, hotel schedule, and currency
 conversion tools wired to an LLM via OpenRouter (OpenAI SDK).
 
-Run with:
-    python main.py
-
-Prints the LLM's final answer to standard output after driving the full
-tool-calling conversation to completion. No server/endpoint is started.
 """
 
 from __future__ import annotations
