@@ -31,7 +31,6 @@ cp .env.example .env
 | Variable             | Required | Default                  | Notes                                   |
 |----------------------|----------|---------------------------|------------------------------------------|
 | `OPENROUTER_API_KEY` | yes      | —                          | Your OpenRouter API key                  |
-| `GEMINI_API_KEY`     | no       | —                          | Unused by this implementation (spec compliance only) |
 | `LLM_MODEL_NAME`     | no       | `openai/gpt-4o-mini`       | Any OpenRouter model slug                |
 
 ## Run
